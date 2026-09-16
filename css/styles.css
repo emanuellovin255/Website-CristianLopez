@@ -4,12 +4,12 @@
   --navy-700: #1E3A66;
   --gold: #C39A4A;
   --gold-light: #E3C27A;
-  --gold-dark: #8C6A2A;
+  --gold-dark: #7A5A1E;
   --gold-grad: linear-gradient(120deg, #E3C27A 0%, #C39A4A 50%, #8C6A2A 100%);
   --cream: #F6F2EC;
   --cream-2: #EFE8DD;
   --ink: #1B2333;
-  --muted: #5E677A;
+  --muted: #4F586B;
   --line: rgba(19, 41, 75, .12);
   --white: #fff;
   --radius: 18px;
@@ -387,4 +387,24 @@ p { margin: 0 0 1em; }
 /* Logo sobre fondo oscuro */
 .header:not(.scrolled) .brand img, .footer .brand img, .about-card .mark {
   filter: drop-shadow(0 0 1px rgba(246,242,236,.9)) drop-shadow(0 0 1px rgba(246,242,236,.9));
+}
+
+/* Utilidades */
+.sprite { position: absolute; width: 0; height: 0; overflow: hidden; }
+.ic-gold { color: var(--gold-light); flex: none; }
+.mb-sm { margin-bottom: 2.5rem; }
+.h2 { font-size: clamp(2rem, 4vw, 3rem); }
+.lead { color: var(--muted); font-size: 1.08rem; }
+.lead-light { color: rgba(255,255,255,.75); }
+.pt-0 { padding-top: 0; }
+.bg-white { background: var(--white); }
+figure.review { margin: 0; }
+.skip-link {
+  position: absolute; left: 16px; top: -60px; z-index: 100;
+  background: var(--navy); color: var(--white); padding: .7rem 1.1rem; border-radius: 10px; font-weight: 600;
+  transition: top .2s;
+}
+.skip-link:focus { top: 16px; }
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+  outline: 2px solid var(--gold); outline-offset: 3px;
 }
