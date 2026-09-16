@@ -14,3 +14,5 @@ Abrir `index.html` en el navegador, o publicar con GitHub Pages (Settings → Pa
 ## Para editar
 - Teléfono/WhatsApp: buscar `584246027658`
 - Horario: sección `#contacto` y footer
+
+> Tras editar `css/styles.css` o `js/main.js`, regenerar las versiones `.min` que usa `index.html`.

@@ -408,3 +408,4 @@ figure.review { margin: 0; }
 a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
   outline: 2px solid var(--gold); outline-offset: 3px;
 }
+main:focus { outline: none; }
