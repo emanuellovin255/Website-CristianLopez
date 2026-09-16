@@ -383,3 +383,8 @@ p { margin: 0 0 1em; }
   .reveal { opacity: 1; transform: none; }
   html { scroll-behavior: auto; }
 }
+
+/* Logo sobre fondo oscuro */
+.header:not(.scrolled) .brand img, .footer .brand img, .about-card .mark {
+  filter: drop-shadow(0 0 1px rgba(246,242,236,.9)) drop-shadow(0 0 1px rgba(246,242,236,.9));
+}
